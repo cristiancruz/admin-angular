@@ -1,0 +1,65 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <a class="navbar-brand" href="index.html">QRFC</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+                <a class="nav-link" href="#">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <span class="nav-link-text">Usuarios</span>
+                </a>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+                    <i class="fa fa-file" aria-hidden="true"></i>
+                    <span class="nav-link-text">Facturación</span>
+                </a>
+                <ul class="sidenav-second-level collapse" id="collapseComponents">
+                    <li>
+                        <a href="#">Historial</a>
+                    </li>
+                    <li>
+                        <a href="#">Timbres</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="navbar-nav sidenav-toggler">
+            <li class="nav-item">
+                <a class="nav-link text-center">
+                    {{ dateNow | date}}
+                </a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link">0 Timbres</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" (click)="logout()">
+                    <i class="fa fa-fw fa-sign-out"></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="content-wrapper mt-5">
+    <div class="container-fluid">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="#">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item active">Blank Page</li>
+        </ol>
+        <div class="row">
+            <div class="col-12">
+                <h1>Blank</h1>
+                <p>This is an example of a blank page that you can use as a starting point for creating new ones.</p>
+            </div>
+        </div>
+    </div>
+</div>
